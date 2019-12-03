@@ -66,19 +66,33 @@ auf einer schiefen Bahn bestimmen}
     \section{Experiment 1: Ball fallenlassen}
     Als erstes Experiment haben wir einen Ball aus \SI{2}{\metre} Höhe
     fallenlassen. Dabei haben wir die Zeit $t$, welche er bis zum Boden
-    benötigt, zunächst mit unserem Puls gemessen. Unseren Messungen zufolge
-    braucht der Ball ungefähr gleich lang, wie drei Herzschläge. Die
+    benötigt, mit unserem Puls gemessen. Unseren Messungen zufolge
+    braucht der Ball ungefähr gleich lang wie ein Herzschlag. Die
     durchschnittliche Herzfrequenz eines erwachsenen Menschen in unserem
     Alter und sportlichen Zustand beträgt 70 Schläge pro Minute (\SI{70}{\per\minute}).
 
-    Berechnung der Zeit $t$ für drei Herzschläge:
-
+    Berechnung der Zeit $t$ für einen Herzschlag:
+    
     \begin{align}
         \Delta t &= \frac{n}{f} \\
-        \Delta t &= \frac{3}{\SI{4200}{\per\second}} \\
-        \Delta t &= \SI{0.0007}{\second}
+        \Delta t &= \frac{1}{\SI{1.17}{\per\second}} \\
+        \Delta t &= \SI{0.86}{\second}
     \end{align}
 
+    Zur Berechnung der Beschleunigung verwenden wir
+    die Formel:
+
+    \begin{align}
+        s &= \frac{1}{2} \cdot a \cdot t^2 \\
+        a &= \frac{2 \cdot s}{t^2} & \text{(Termumformung)}
+    \end{align}
+
+    Mit unseren gemessenen Werten erhalten wir somit:
+
+    \begin{align}
+        a &= \frac{2 \cdot \SI{2}{\metre}}{(\SI{0.86}{\second})^2} \\
+        a &= \accunit{5.41}
+    \end{align}
 
 
 
@@ -101,10 +115,6 @@ auf einer schiefen Bahn bestimmen}
     der Zeit \emph{t} gemessen, um die Beschleunigung
     \emph{a} zu bestimmen. Dazu haben wir folgende Formel
     angewandt:
-    \begin{align}
-        s &= \frac{1}{2} \cdot a \cdot t^2 \\
-        a &= \frac{2 \cdot s}{t^2} &\text{(Termumformung)}
-    \end{align}
 
 
 
