@@ -8,6 +8,8 @@
 \usepackage{tabularx}
 \usepackage{siunitx}
 
+\newcommand{\accunit}[1]{\SI{#1}{\metre\per\square\second}}
+
 
 \title{Die Gravitationskonstante g
 auf einer schiefen Bahn bestimmen}
@@ -29,7 +31,7 @@ auf einer schiefen Bahn bestimmen}
     berechnen. Sie bezeichnet die Beschleunigung, die ein Körper nahe
     der Erde im freien Fall erreicht (ohne Einberechnung des 
     Luftwiderstandes) und beträgt nach heutigen Forschungen
-    etwa \SI{9.81}{\metre\per\square\second}.
+    etwa \accunit{9.81}.
 
     Wir möchten ähnliche Versuche ausführen und somit $g$ ungefähr bestimmen. 
     Um eine praktische Sicht auf $g$ zu zeigen, werden wir als Anfangsexperiment einen
@@ -94,9 +96,11 @@ auf einer schiefen Bahn bestimmen}
         \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|X|}
             \hline
             \textbf{Number of books} & \textbf{Height of books $(m)$} & 
-            \boldmath{$\sin{\theta}$} & \textbf{Trial 1 $(m/s^2)$} & 
-            \textbf{Trial 2 $(m/s^2)$} & \textbf{Trial 3 $(m/s^2)$} & 
-            \textbf{Average acceleration $(m/s^2)$} \\
+            \boldmath{$\sin{\theta}$} & \textbf{Trial 1}
+            (\accunit{}) & 
+            \textbf{Trial 2} (\accunit{}) & 
+            \textbf{Trial 3} (\accunit{}) & 
+            \textbf{Average acceleration} (\accunit{}) \\
             \hline
             3 & 0.115 & 0.0479 & 0.26 & 0.31 & 0.36 & 0.310 \\
             \hline
@@ -109,6 +113,7 @@ auf einer schiefen Bahn bestimmen}
             7 & 0.275 & 0.115 & 0.97 & 1.22 & 1.22 & 1.137 \\
             \hline
         \end{tabularx}
+        \caption{Messwerte (Ball)}
     \end{table}
 
 
