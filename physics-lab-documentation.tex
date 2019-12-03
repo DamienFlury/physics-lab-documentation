@@ -66,7 +66,11 @@ auf einer schiefen Bahn bestimmen}
     \section{Experiment 1: Ball fallenlassen}
     Als erstes Experiment haben wir einen Ball aus \SI{2}{\metre} Höhe
     fallenlassen. Dabei haben wir die Zeit $t$, welche er bis zum Boden
-    benötigt, mit unserem Puls gemessen. Unseren Messungen zufolge
+    benötigt, gemessen.
+    \subsection{Messung mit Herzfrequenz}
+    In einem ersten Teil dieses Experiments haben wir $t$
+    mithilfe unserer Herzfrequenz gemessen.
+    Unseren Messungen zufolge
     braucht der Ball ungefähr gleich lang wie ein Herzschlag. Die
     durchschnittliche Herzfrequenz eines erwachsenen Menschen in unserem
     Alter und sportlichen Zustand beträgt 70 Schläge pro Minute (\SI{70}{\per\minute}).
@@ -84,15 +88,39 @@ auf einer schiefen Bahn bestimmen}
 
     \begin{align}
         s &= \frac{1}{2} \cdot a \cdot t^2 \\
-        a &= \frac{2 \cdot s}{t^2} & \text{(Termumformung)}
+        a &= \frac{2 \cdot s}{t^2} & \text{(Termumformung)} \label{ast}
     \end{align}
 
     Mit unseren gemessenen Werten erhalten wir somit:
 
-    \begin{align}
-        a &= \frac{2 \cdot \SI{2}{\metre}}{(\SI{0.86}{\second})^2} \\
-        a &= \accunit{5.41}
-    \end{align}
+    \begin{equation}
+        a = \frac{2 \cdot \SI{2}{\metre}}{(\SI{0.86}{\second})^2}
+        \approx \accunit{5.41}
+    \end{equation}
+
+    Dies ist etwa \accunit{4.4} zu klein. Dieser Fehler kommt
+    einerseits von ungenauen Messmethoden (Herzfrequenz), andererseits
+    von unserer Reaktionszeit. Ausserdem verfälscht der Luftwiderstand
+    weiterhin das Resultat. Die korrekte Zeit, welche der Ball
+    im Vakuum bräuchte, wäre ca. \SI{0.64}{\second}.
+
+    \subsection{Messung mit Stoppuhr}
+    Im zweiten Teil dieses Experiments haben wir die benötigte
+    Zeit mit einer Stoppuhr gemessen. Wir erhielten dabei eine
+    Zeit $t$ von \SI{360}{\milli\second}.
+
+    Wenn wir diese Messung wieder der Formel aus \ref{ast}
+    mitgeben, erhalten wir eine Beschleunigung von:
+    \begin{equation}
+        a = \frac{2 \cdot \SI{2}{\metre}}{(\SI{0.360}{\second})^2}
+        \approx \accunit{30.86}
+    \end{equation}
+    
+    Dies ist wesentlich zu hoch. Dies ist zwar überraschend, 
+    da wir eine wesentlich genauere Messmethode anwendeten,
+    jedoch spielt unsere Reaktionszeit immernoch eine entscheidende
+    Rolle. Wir haben einfach zu früh gestoppt oder die Stoppuhr
+    zu spät gestartet.
 
 
 
