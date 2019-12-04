@@ -81,7 +81,7 @@ auf einer schiefen Bahn bestimmen}
     \begin{align}
         \Delta t &= \frac{n}{f} \label{tnf} \\
         \Delta t &= \frac{1}{\SI{1.17}{\per\second}} \\
-        \Delta t &= \SI{0.86}{\second}
+        t &= \SI{0.86}{\second}
     \end{align}
 
     Zur Berechnung der Beschleunigung verwenden wir
@@ -139,11 +139,17 @@ auf einer schiefen Bahn bestimmen}
     Unseren Messungen zufolge benötigt der Ball ungefähr drei Herzschläge
     für einen Meter. Unter der Annahme, dass unsere durchschnittliche
     Herzfrequenz $f$ \SI{70}{\per\minute} ($\approx \SI{1.17}{\per\second}$) 
-    beträgt, erhalten wir durch die
-    Formel aus (\ref{tnf}):
+    beträgt, erhalten wir durch die Formel aus (\ref{tnf}):
 
     \begin{equation}
-        a = \frac{3}{\SI{1.17}{\per\second}} \approx \SI{2.57}{\second}
+        t = \frac{3}{\SI{1.17}{\per\second}} \approx \SI{2.57}{\second}
+    \end{equation}
+
+    Anhand der Formel aus (\ref{ast}) erhalten wir für die Beschleunigung $a$
+    bei einem Neigungswinkel von \SI{10}{\degree}:
+
+    \begin{equation}
+        a = \frac{2 \cdot \SI{1}{\metre}}{(\SI{2.57}{\second})^2} \approx \accunit{0.303}
     \end{equation}
 
 
