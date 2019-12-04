@@ -63,11 +63,12 @@ auf einer schiefen Bahn bestimmen}
         \label{incline}
     \end{figure}
 
-    \section{Experiment 1: Ball fallenlassen}
+    \section{Vorfragen}
+    \subsection{Experiment 1: Ball fallenlassen}
     Als erstes Experiment haben wir einen Ball aus \SI{2}{\metre} Höhe
     fallenlassen. Dabei haben wir die Zeit $t$, welche er bis zum Boden
     benötigt, gemessen.
-    \subsection{Messung mit Herzfrequenz}
+    \subsubsection{Messung mit Herzfrequenz}
     In einem ersten Teil dieses Experiments haben wir $t$
     mithilfe unserer Herzfrequenz gemessen.
     Unseren Messungen zufolge
@@ -78,7 +79,7 @@ auf einer schiefen Bahn bestimmen}
     Berechnung der Zeit $t$ für einen Herzschlag:
     
     \begin{align}
-        \Delta t &= \frac{n}{f} \\
+        \Delta t &= \frac{n}{f} \label{tnf} \\
         \Delta t &= \frac{1}{\SI{1.17}{\per\second}} \\
         \Delta t &= \SI{0.86}{\second}
     \end{align}
@@ -104,12 +105,12 @@ auf einer schiefen Bahn bestimmen}
     weiterhin das Resultat. Die korrekte Zeit, welche der Ball
     im Vakuum bräuchte, wäre ca. \SI{0.64}{\second}.
 
-    \subsection{Messung mit Stoppuhr}
+    \subsubsection{Messung mit Stoppuhr}
     Im zweiten Teil dieses Experiments haben wir die benötigte
     Zeit mit einer Stoppuhr gemessen. Wir erhielten dabei eine
     Zeit $t$ von \SI{360}{\milli\second}.
 
-    Wenn wir diese Messung wieder der Formel aus \ref{ast}
+    Wenn wir diese Messung wieder der Formel aus (\ref{ast})
     mitgeben, erhalten wir eine Beschleunigung von:
     \begin{equation}
         a = \frac{2 \cdot \SI{2}{\metre}}{(\SI{0.360}{\second})^2}
@@ -122,8 +123,28 @@ auf einer schiefen Bahn bestimmen}
     Rolle. Wir haben einfach zu früh gestoppt oder die Stoppuhr
     zu spät gestartet.
 
+    \subsection{Experiment: Ball auf schiefer Bahn}
+    Für das nächste Experiment haben wir einen Ball von einer 
+    schiefen Bahn herunterrollen lassen und die Zeit gemessen
+    (siehe Abbildung \ref{incline}).
 
+    \begin{tabular}{|l|l|}
+        \hline
+        $\theta$ & \SI{10}{\degree} \\
+        x & \SI{1}{\metre} \\
+        \hline
+    \end{tabular}
 
+    \subsubsection{Zeitmessung mit Herzfrequenz}
+    Unseren Messungen zufolge benötigt der Ball ungefähr drei Herzschläge
+    für einen Meter. Unter der Annahme, dass unsere durchschnittliche
+    Herzfrequenz $f$ \SI{70}{\per\minute} ($\approx \SI{1.17}{\per\second}$) 
+    beträgt, erhalten wir durch die
+    Formel aus (\ref{tnf}):
+
+    \begin{equation}
+        a = \frac{3}{\SI{1.17}{\per\second}} \approx \SI{2.57}{\second}
+    \end{equation}
 
 
     \section{Experiment}
