@@ -1,5 +1,6 @@
 {
     "cSpell.language": ",de",
+    "peacock.color": "#008080",
     "workbench.colorCustomizations": {
         "activityBar.background": "#00b3b3",
         "activityBar.activeBorder": "#bf00bf",
@@ -14,6 +15,5 @@
         "statusBar.background": "#008080",
         "statusBarItem.hoverBackground": "#00b3b3",
         "statusBar.foreground": "#e7e7e7"
-    },
-    "peacock.color": "#008080"
+    }
 }

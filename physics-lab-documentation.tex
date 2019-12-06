@@ -7,6 +7,10 @@
 \usepackage{amsmath}
 \usepackage{tabularx}
 \usepackage{siunitx}
+\usepackage{setspace} % for \onehalfspacing and \singlespacing macros
+\onehalfspacing 
+\usepackage{etoolbox}
+\AtBeginEnvironment{quote}{\singlespacing\small}
 
 \newcommand{\accunit}[1]{\SI{#1}{\metre\per\square\second}}
 
@@ -26,6 +30,9 @@ auf einer schiefen Bahn bestimmen}
     \end{abstract}
     \tableofcontents
     \newpage
+
+
+
     \section{Einleitung}
     Die Gravitation begleitet den Mensch tagtäglich. Doch wie stark
     ist sie auf der Erde eigentlich und wie kann sie bestimmt werden?
@@ -162,6 +169,27 @@ auf einer schiefen Bahn bestimmen}
 
 
     \section{Hauptexperiment: Schiefe Ebene}
+
+    \begin{quote}
+    Auf einem Holzbrett von 12 Ellen Länge, einer halben Elle Breite
+    und drei Zoll Dicke war auf der schmalen Seite eine Rinne von
+    etwas mehr als einem Zoll Breite eingegraben. Dieselbe war sehr
+    gerade gezogen, und um die Fläche recht glatt zu haben, war
+    innwendig ein sehr glattes und reines Pergament aufgeklebt.
+    In dieser Rinne liessen wir eine harte, völlig runde und glatt
+    polierte Messingkugel laufen. Nach Aufstellung des Brettes
+    wurde dasselbe auf der einen Seite etwas angehoben,
+    bald eine, bald zwei Ellen hoch; dann liessen wir die Kugel durch die
+    Rinne laufen. [...] 
+    Bei wohl hundertfacher Wiederholung fanden wir stets, 
+    dass die Strecke sich verhielten wie die ungeraden Zahlen: 
+    die zweite Strecke ist drei Mal so lang wie die erste Strecke, 
+    die dritte Stricke ist fünf Mal so lang wie die erste Strecke... 
+    und dies galt für jede beliebige Neigung der Rinne, in der die Kugel 
+    lief. \cite{physicsbook}
+    \end{quote}
+
+
     Wir haben unser Experiment wiederum eingerichtet, wie auf Abbildung
     \ref{incline} dargestellt. Dann haben wir verschiedene Objekte
     herunterrollen lassen mit verschieden Höhen
@@ -208,7 +236,12 @@ auf einer schiefen Bahn bestimmen}
     auch mit einem Cart durchgeführt. Der Vorgang war
     prinzipiell derselbe, jedoch haben wir hohere
     Beschleunigungen erhalten, wie in Tabelle \ref{cart}
-    dargestellt.
+    dargestellt. Wir haben wiederum Geogebra verwendet,
+    um die Werte in einem Graphen darzustellen und eine
+    optimale lineare Annäherung zu finden 
+    (Abbildung \ref{extrapolation_small_cart}) und
+    eine Extrapolation hergeleitet 
+    (Abbildung \ref{extrapolation_large_cart}).
 
 
 
@@ -262,5 +295,20 @@ auf einer schiefen Bahn bestimmen}
         \label{cart}
     \end{table}
 
+    \begin{figure}
+        \includegraphics[width=\textwidth]{images/extrapolation_cart_small}
+        \caption{Optimale lineare Annäherung (Cart)}
+        \label{extrapolation_small_cart}
+    \end{figure}
+
+    \begin{figure}
+        \includegraphics[width=\textwidth]{images/extrapolation_cart_large}
+        \caption{Extrapolation zu $\theta = \SI{90}{\degree}$}
+        \label{extrapolation_large_cart}
+    \end{figure}
+
+    \nocite{*}
+    \bibliographystyle{IEEETran}
+    \bibliography{references}
 
 \end{document}
