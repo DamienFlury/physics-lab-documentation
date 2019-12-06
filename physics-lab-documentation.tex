@@ -179,7 +179,27 @@ auf einer schiefen Bahn bestimmen}
     $a$ zu bestimmen. Dazu haben wiederum die Formel
     aus (\ref{ast}) verwendet.
     Die Messwerte sind in der Tabelle \ref{ball}
-    ersichtlich.
+    ersichtlich. Diese Punkte haben wir in einem
+    Graph eingetragen und mithilfe von Geogebra
+    eine am besten passende lineare Funktion berechnet.
+    Diese ist in der Abbildung \ref{extrapolation_small}
+    ersichtlich. Durch Extrapolation zu 
+    $\sin{\theta} = 1$, also zum Winkel 
+    $\theta = \SI{90}{\degree}$ erhalten wir für
+    die Beschleunigung $a = \accunit{11.89}$. Dies 
+    ist in der Abbildung \ref{extrapolation_large}.
+
+    \begin{figure}
+        \includegraphics[width=\textwidth]{images/extrapolation_small.png}
+        \caption{Optimale lineare Annäherung}
+        \label{extrapolation_small}
+    \end{figure}
+
+    \begin{figure}
+       \includegraphics[width=\textwidth]{images/extrapolation_large.png}
+       \caption{Extrapolation zu $\theta = \SI{90}{\degree}$}
+       \label{extrapolation_large}
+    \end{figure}
 
     \subsection{Messung mit einem Cart}
     Um die Reibung und den Luftwiderstand möglichst 
