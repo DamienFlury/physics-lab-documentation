@@ -12,6 +12,7 @@
 \onehalfspacing 
 \usepackage{etoolbox}
 \AtBeginEnvironment{quote}{\singlespacing\small}
+\usepackage{subfig}
 
 \newcommand{\accunit}[1]{\SI{#1}{\metre\per\square\second}}
 
@@ -213,40 +214,11 @@ auf einer schiefen Bahn bestimmen}
     ersichtlich. Diese Punkte haben wir in einem
     Graph eingetragen und mithilfe von Geogebra
     eine am besten passende lineare Funktion berechnet.
-    Diese ist in der Abbildung \ref{extrapolation_small}
-    ersichtlich. Durch Extrapolation zu 
+    Durch Extrapolation zu 
     $\sin{\theta} = 1$, also zum Winkel 
     $\theta = \SI{90}{\degree}$ erhalten wir für
-    die Beschleunigung $a = \accunit{11.89}$. Dies 
-    ist in der Abbildung \ref{extrapolation_large}.
-
-    \begin{figure}
-        \includegraphics[width=\textwidth]{images/extrapolation_small.png}
-        \caption{Optimale lineare Annäherung}
-        \label{extrapolation_small}
-    \end{figure}
-
-    \begin{figure}
-       \includegraphics[width=\textwidth]{images/extrapolation_large.png}
-       \caption{Extrapolation zu $\theta = \SI{90}{\degree}$}
-       \label{extrapolation_large}
-    \end{figure}
-
-    \subsection{Messung mit einem Cart}
-    Um die Reibung und den Luftwiderstand möglichst 
-    klein zu halten und somit eine möglichst genaue
-    Messung zu erzielen, haben wir das ganze Experiment
-    auch mit einem Cart durchgeführt. Der Vorgang war
-    prinzipiell derselbe, jedoch haben wir hohere
-    Beschleunigungen erhalten, wie in Tabelle \ref{cart}
-    dargestellt. Wir haben wiederum Geogebra verwendet,
-    um die Werte in einem Graphen darzustellen und eine
-    optimale lineare Annäherung zu finden 
-    (Abbildung \ref{extrapolation_small_cart}) und
-    eine Extrapolation hergeleitet 
-    (Abbildung \ref{extrapolation_large_cart}).
-
-
+    die Beschleunigung $a = \accunit{11.89}$. Grafiken sind
+    in der Abbildung \ref{main_experiment_ball} ersichtlich.
 
     \begin{table}
         \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|X|}
@@ -273,6 +245,32 @@ auf einer schiefen Bahn bestimmen}
         \label{ball}
     \end{table}
 
+    \begin{figure}
+        \centering
+        \subfloat[Optimale lineare Approximation] {{\includegraphics[width = 5cm]{images/extrapolation_small}}}
+        \qquad
+        \subfloat[Extrapolation] {{\includegraphics[width = 5cm]{images/extrapolation_large}}}
+        \caption{Hauptxperiment (Ball)}
+        \label{main_experiment_ball}
+    \end{figure}
+
+    
+    \subsection{Messung mit einem Cart}
+    Um die Reibung und den Luftwiderstand möglichst 
+    klein zu halten und somit eine möglichst genaue
+    Messung zu erzielen, haben wir das ganze Experiment
+    auch mit einem Cart durchgeführt. Der Vorgang war
+    prinzipiell derselbe, jedoch haben wir hohere
+    Beschleunigungen erhalten, wie in Tabelle \ref{cart}
+    dargestellt. Wir haben wiederum Geogebra verwendet,
+    um die Werte in einem Graphen darzustellen und eine
+    optimale lineare Annäherung zu finden
+    und daraus eine Extrapolation hergeleitet 
+    (Abbildung \ref{main_experiment_cart}).
+    
+    
+    
+    
     \begin{table}
         \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|X|}
             \hline
@@ -297,17 +295,14 @@ auf einer schiefen Bahn bestimmen}
         \caption{Messwerte (Cart)}
         \label{cart}
     \end{table}
-
+    
     \begin{figure}
-        \includegraphics[width=\textwidth]{images/extrapolation_cart_small}
-        \caption{Optimale lineare Annäherung (Cart)}
-        \label{extrapolation_small_cart}
-    \end{figure}
-
-    \begin{figure}
-        \includegraphics[width=\textwidth]{images/extrapolation_cart_large}
-        \caption{Extrapolation zu $\theta = \SI{90}{\degree}$}
-        \label{extrapolation_large_cart}
+        \centering
+        \subfloat[Optimale lineare Approximation] {{\includegraphics[width = 5cm]{images/extrapolation_cart_small}}}
+        \qquad
+        \subfloat[Extrapolation] {{\includegraphics[width = 5cm]{images/extrapolation_cart_large}}}
+        \caption{Hauptxperiment (Cart)}
+        \label{main_experiment_cart}
     \end{figure}
 
     \nocite{*}
